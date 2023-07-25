@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(247, 190, 104);
+}
+
+/* navbar*/
+#navbar{
+    position: sticky;
+    top: 0;
+    background-color: rgb(78, 210, 251);
+
+}
+.navbot {
+  gap: 3vh;
+  display: flex;
+  padding: 0.5vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(65, 64, 64, 0.163);
+}
+.navbot a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.navbot a:hover {
+  color: rgb(13, 0, 255);
+}
+.navtop {
+  font-size: 2.9rem;
+  font-weight: 600;
+  padding: 2vh;
+  text-align: center;
+}
+
+/* live red */
+#live {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .red {
+    width: 1vh;
+    height: 1vh;
+    background-color: black;
+    border-radius: 360px;
+    animation: live 1s alternate-reverse infinite;
+  }
+  @keyframes live {
+    to {
+      background-color: red;
+    }
+  }
+
+  
+  /* category */
+
+  #category-opt{
+    padding: 2px 14px;
+    font-size: 1.3rem;
+    border: 0px;
+    outline: none;
+    margin: 4px 10px;
+    position: fixed;
+  }
+  #newscontainer{
+    margin-top: 5.5vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #news{
+    margin: 4px 6px;
+    padding: 2vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.591);
+    /* border: 1px solid rgba(0, 0, 0, 0.248); */
+    justify-content: center;
+  }
+  #s-poster{
+    width: 45vh;
+  }
+  .s-right{
+    width: 140vh;
+    background-color: rgb(185, 192, 192);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  #s-headline{
+    font-size: 1.5rem;
+  }
+  #s-source{
+    font-size: 1.1rem;
+    margin-top: -1.5vh;
+    background-color: rgba(250, 235, 215, 0.484);
+  }
+  #s-description{
+    font-size: 1rem;
+  }
+  #s-url{
+    font-size: 1rem;
+    padding: 2px 8px;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid black;
+    background-color: rgb(251, 255, 18);
+  }
+  .s-poster{
+    display: flex;
+    object-fit: contain;
+  }

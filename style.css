@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body {
+  background:linear-gradient(rgba(255, 243, 114, 0.531),rgba(248, 228, 10, 0.531)); */
+  /* overflow: hidden;
+} */
+#navbar{
+    position: sticky;
+    top: 0;
+    background-color: rgb(254, 195, 77);
+
+}
+.navbot {
+  gap: 3vh;
+  display: flex;
+  padding: 0.5vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.428);
+}
+.navbot a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.navbot a:hover {
+  color: rgb(13, 0, 255);
+}
+.navtop {
+  font-size: 2.9rem;
+  font-weight: 600;
+  padding: 2vh;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* live red */
+#live {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.red {
+  width: 1vh;
+  height: 1vh;
+  background-color: black;
+  border-radius: 360px;
+  animation: live 1s alternate-reverse infinite;
+}
+@keyframes live {
+  to {
+    background-color: red;
+  }
+}
+#news-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+}
+
+
+
+/* news */
+#right{
+    border: 2px solid black;
+    overflow-y: scroll;
+    height: 72vh;
+    /* position: relative; */
+}
+.h5{
+    font-weight: 500;
+    display: flex;
+    color: brown;
+    padding: 1vh 0vh;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    justify-content: center;
+    /* position: absolute;
+    width: 100%; */
+    /* top: 0; */
+}
+
+#news{
+    /* width: 90vh; */
+    border: 2px solid black;
+    border-radius: 2vh;
+    padding: 2vh;
+    margin: 2vh;
+    background-color: rgb(144, 231, 255);
+    font-family: 'Lato', sans-serif;
+}
+#headline{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+#url{
+    background-color: black;
+    color: white;
+    padding: 2px 4px;
+    font-size: 1.1rem;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+#right::-webkit-scrollbar {
+    display: none;
+  }
+
+
+#left{
+    width: 38%;
+    background-color: black;
+    color: rgb(251, 255, 10);
+    font-size: 3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./bgnews.avif);
+    background-size: cover;
+}
+#left .heading1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#bycat{
+    height: 100vh;
+}
+
+
+
+
+#newsimg{
+    width: 5vh;
+    height: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
